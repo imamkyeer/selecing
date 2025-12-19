@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behance Hire UI Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .behance-blue {
+      background-color: #0057FF;
+    }
+    .behance-gradient {
+      background: linear-gradient(135deg, #0057FF 0%, #00B2FF 100%);
+    }
+    .behance-shadow {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #a1a1a1;
+    }
+    .hover-lift {
+      transition: transform 0.2s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-2px);
+    }
+    .category-link {
+      transition: all 0.3s ease;
+    }
+    .category-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50">
+  <div class="flex min-h-screen">
+    <!-- SIDEBAR - SCROLLABLE -->
+    <aside class="w-64 bg-white border-r border-gray-200 flex flex-col fixed h-full overflow-y-auto custom-scrollbar">
+      <div class="px-6 py-5 flex-shrink-0">
+        <!-- Behance Logo -->
+        
+        
+        <!-- Hirer Info -->
+        <div class="flex items-center mb-8">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-teal-400 flex items-center justify-center text-white font-semibold">
+            IS
+          </div>
+          <div class="ml-3">
+            <p class="font-medium text-gray-900">Imam Surya</p>
+            <p class="text-xs text-gray-500">Hirer</p>
+          </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="space-y-1">
+          <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">Dashboard</h3>
+          <a class="flex items-center px-3 py-2.5 rounded-lg bg-blue-50 text-blue-600 font-medium hover-lift">
+            <i class="fas fa-chart-bar mr-3"></i>
+            Overview
+          </a>
+          <a href="payments.html" class="flex items-center px-3 py-2.5 text-gray-700 hover:bg-gray-100 rounded-lg hover-lift">
+            <i class="fas fa-credit-card mr-3"></i>
+            Payments
+          </a>
+          <a href="reviews.html" class="flex items-center px-3 py-2.5 text-gray-700 hover:bg-gray-100 rounded-lg hover-lift">
+            <i class="fas fa-star mr-3"></i>
+            Reviews
+          </a>
+         
+        </nav>
+      </div>
+
+      <!-- Hirer Checklist -->
+      <div class="px-6 py-5 border-t border-gray-200 mt-4">
+        <h3 class="text-sm font-semibold mb-4 flex items-center">
+          <i class="fas fa-clipboard-check mr-2"></i>
+          Hirer Checklist
+        </h3>
+        
+        <button class="w-full border border-gray-300 rounded-lg py-3 text-sm mb-4 hover:bg-gray-50 flex items-center justify-center hover-lift">
+          <i class="fab fa-linkedin mr-2"></i>
+          Connect with LinkedIn
+        </button>
+
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center text-green-600">
+            <i class="fas fa-check-circle mr-2"></i>
+            <span>Verify your email</span>
+          </li>
+          <li class="flex items-center text-gray-600">
+            <div class="w-4 h-4 rounded-full border border-gray-400 mr-2 flex items-center justify-center">
+              <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+            </div>
+            <span>Add your profile photo</span>
+          </li>
+          <li class="flex items-center text-gray-600">
+            <div class="w-4 h-4 rounded-full border border-gray-400 mr-2 flex items-center justify-center">
+              <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+            </div>
+            <span>Create a freelance project</span>
+          </li>
+          <li class="flex items-center text-gray-600">
+            <div class="w-4 h-4 rounded-full border border-gray-400 mr-2 flex items-center justify-center">
+              <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+            </div>
+            <span>Complete your company profile</span>
+          </li>
+          <li class="flex items-center text-gray-600">
+            <div class="w-4 h-4 rounded-full border border-gray-400 mr-2 flex items-center justify-center">
+              <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+            </div>
+            <span>Make your first hire</span>
+          </li>
+        </ul>
+        
+        <div class="mt-6">
+          <div class="flex justify-between text-xs text-gray-500 mb-1">
+            <span>Profile completion</span>
+            <span>20%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-1.5">
+            <div class="bg-blue-600 h-1.5 rounded-full" style="width: 20%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Details -->
+      <div class="px-6 py-5 border-t border-gray-200 mt-4">
+        <h3 class="text-sm font-semibold mb-3">Profile Details</h3>
+        <div class="space-y-2 text-sm text-gray-600">
+          <div class="flex items-center">
+            <i class="fas fa-user mr-2 text-gray-400 w-4"></i>
+            <span class="font-medium text-gray-900">Imam Surya</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-briefcase mr-2 text-gray-400 w-4"></i>
+            <span>No occupation listed</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-map-marker-alt mr-2 text-gray-400 w-4"></i>
+            <span>Jakarta, Indonesia</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-envelope mr-2 text-gray-400 w-4"></i>
+            <span>imam@example.com</span>
+          </div>
+        </div>
+        
+        <a href="edit-profile.html" class="w-full mt-4 text-sm text-blue-600 hover:text-blue-800 font-medium py-2 hover-lift inline-block">
+          <i class="fas fa-edit mr-1"></i>
+          Edit Profile
+        </a>
+      </div>
+
+      <!-- Help & Support -->
+      <div class="px-6 py-5 border-t border-gray-200 mt-4">
+        <h3 class="text-sm font-semibold mb-3">Help & Support</h3>
+        <div class="space-y-2">
+          <a href="help-center.html" class="flex items-center text-sm text-gray-600 hover:text-gray-900 py-1.5 hover-lift">
+            <i class="fas fa-question-circle mr-2 text-gray-400"></i>
+            Help Center
+          </a>
+          <a href="contact-support.html" class="flex items-center text-sm text-gray-600 hover:text-gray-900 py-1.5 hover-lift">
+            <i class="fas fa-comments mr-2 text-gray-400"></i>
+            Contact Support
+          </a>
+          <a href="hiring-guide.html" class="flex items-center text-sm text-gray-600 hover:text-gray-900 py-1.5 hover-lift">
+            <i class="fas fa-book mr-2 text-gray-400"></i>
+            Hiring Guide
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer on Sidebar -->
+      <div class="px-6 py-4 border-t border-gray-200 mt-auto">
+        <div class="text-xs text-gray-500">
+          <p class="mb-1">© 2023 Behance</p>
+          <p>Adobe company</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT - SCROLLABLE SEPARATELY -->
+    <main class="flex-1 ml-64 overflow-y-auto h-screen custom-scrollbar">
+      <!-- Header -->
+      <div class="bg-white border-b border-gray-200 px-8 py-4 sticky top-0 z-10 behance-shadow">
+       <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <h1 class="text-xl font-bold">Bēhance</h1>
+        <nav class="hidden md:flex gap-4 text-sm font-medium">
+          <a href="i.html" class="hover:text-blue-600">Dashboard</a>
+          <a href="logo.html" class="hover:text-blue-600">Freelancers</a>
+          <a href="service.html" class="hover:text-blue-600">Services</a>
+          <a href="explore.html" class="hover:text-blue-600">Explore</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">New Freelance Job</button>
+        <div class="w-8 h-8 bg-gray-200 rounded-full"></div>
+      </div>
+    </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="px-8 py-12">
+        <section class="text-center max-w-3xl mx-auto mb-16">
+          <h1 class="text-4xl font-bold text-gray-900 mb-4">
+            What are you hiring for?
+          </h1>
+
+          <p class="text-gray-600 text-lg mb-10">
+            In a few words, tell us what you are looking to hire for. We'll help you find the perfect match.
+          </p>
+
+          <!-- Search -->
+          <div class="flex items-center max-w-2xl mx-auto border-2 border-blue-500 rounded-full px-6 py-3 bg-white behance-shadow hover-lift">
+            <span class="text-blue-600 mr-3 text-sm font-medium whitespace-nowrap">
+              I'm looking for
+            </span>
+            <input
+              type="text"
+              class="flex-1 outline-none text-gray-800 placeholder-gray-400 text-base"
+              placeholder="an illustrator for my pet food company"
+            />
+            <button class="ml-4 w-10 h-10 rounded-full behance-gradient text-white flex items-center justify-center hover-lift">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          
+          <p class="text-gray-500 text-sm mt-4">
+            Try: "logo designer", "UX researcher", "architectural visualizer"
+          </p>
+        </section>
+
+        <!-- Categories with Links -->
+        <section class="mt-14 flex flex-wrap gap-3 justify-center">
+          <!-- Logo Design -->
+          <a href="logo.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Logo Design
+          </a>
+          
+          <!-- Branding Services -->
+          <a href="category/branding-services.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Branding Services
+          </a>
+          
+          <!-- Social Media Design -->
+          <a href="category/social-media-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Social Media Design
+          </a>
+          
+          <!-- Website Design -->
+          <a href="category/website-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Website Design
+          </a>
+          
+          <!-- Illustrations -->
+          <a href="category/illustrations.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Illustrations
+          </a>
+          
+          <!-- Packaging Design -->
+          <a href="category/packaging-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Packaging Design
+          </a>
+          
+          <!-- Landing Page Design -->
+          <a href="category/landing-page-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Landing Page Design
+          </a>
+          
+          <!-- UI/UX Design -->
+          <a href="category/ui-ux-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            UI/UX Design
+          </a>
+          
+          <!-- Architecture Renderings -->
+          <a href="category/architecture-renderings.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Architecture Renderings
+          </a>
+          
+          <!-- Stationery Design (Corrected Typo) -->
+          <a href="category/stationery-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Stationery Design
+          </a>
+          
+          <!-- Fonts & Typography (Corrected Typo) -->
+          <a href="category/fonts-typography.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Fonts & Typography
+          </a>
+          
+          <!-- Browse All Categories -->
+          <a href="all-categories.html" 
+             class="category-link px-6 py-3 rounded-full bg-gray-800 text-white text-sm hover:bg-gray-700 hover-lift inline-flex items-center">
+            Browse all categories
+            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+          </a>
+        </section>
+
+        <!-- Additional Categories Section -->
+        
+          
+          
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Simple interactivity
+    document.addEventListener('DOMContentLoaded', function() {
+      // Make category cards clickable
+      const categoryCards = document.querySelectorAll('.cursor-pointer');
+      categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+          const title = this.querySelector('h4').textContent;
+          alert(`You selected: ${title}`);
+        });
+      });
+      
+      // Search functionality
+      const searchInput = document.querySelector('input[type="text"]');
+      const searchButton = document.querySelector('.fa-arrow-right').parentElement;
+      
+      searchButton.addEventListener('click', function() {
+        if (searchInput.value.trim()) {
+          alert(`Searching for: ${searchInput.value}`);
+        } else {
+          searchInput.focus();
+        }
+      });
+      
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          if (this.value.trim()) {
+            alert(`Searching for: ${this.value}`);
+          }
+        }
+      });
+      
+      // Category link hover effect
+      const categoryLinks = document.querySelectorAll('.category-link');
+      categoryLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-3px)';
+        });
+        link.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

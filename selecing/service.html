@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Behance Services Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white border-b sticky top-0 z-50">
+   <div class="bg-white border-b border-gray-200 px-8 py-4 sticky top-0 z-10 behance-shadow">
+       <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <h1 class="text-xl font-bold">Bēhance</h1>
+        <nav class="hidden md:flex gap-4 text-sm font-medium">
+          <a href="i.html" class="hover:text-blue-600">Dashboard</a>
+          <a href="logo.html" class="hover:text-blue-600">Freelancers</a>
+          <a href="service.html" class="hover:text-blue-600">Services</a>
+          <a href="explore.html" class="hover:text-blue-600">Explore</a>
+        </nav>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">New Freelance Job</button>
+        <div class="w-8 h-8 bg-gray-200 rounded-full"></div>
+      </div>
+    </div>
+      </div>
+  
+</header>
+
+<!-- MAIN -->
+<div class="max-w-7xl mx-auto px-4 py-6 flex gap-6">
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 hidden lg:block bg-white rounded-xl p-4 shadow">
+    <h2 class="font-semibold mb-4">Filters</h2>
+
+    <div class="mb-4">
+      <h3 class="text-sm font-medium mb-2">Type</h3>
+      <label class="flex items-center gap-2 text-sm">
+        <input type="checkbox"> Freelancers
+      </label>
+      <label class="flex items-center gap-2 text-sm">
+        <input type="checkbox"> Services
+      </label>
+    </div>
+
+    
+  </aside>
+
+  <!-- CONTENT -->
+  <main class="flex-1">
+
+    <!-- TABS -->
+    <section class="mt-14 flex flex-wrap gap-3 justify-center">
+          <!-- Logo Design -->
+          <a href="logo.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Logo Design
+          </a>
+          
+          <!-- Branding Services -->
+          <a href="category/branding-services.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Branding Services
+          </a>
+          
+          <!-- Social Media Design -->
+          <a href="category/social-media-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Social Media Design
+          </a>
+          
+          <!-- Website Design -->
+          <a href="category/website-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Website Design
+          </a>
+          
+          <!-- Illustrations -->
+          <a href="category/illustrations.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Illustrations
+          </a>
+          
+          <!-- Packaging Design -->
+          <a href="category/packaging-design.html" 
+             class="category-link px-6 py-3 rounded-full bg-black text-white text-sm hover:bg-gray-800 hover-lift inline-flex items-center">
+            Packaging Design
+          </a>
+          
+          <!-- Landing Page Design -->
+          tionery Design (Corrected Typo) -->
+         
+        </section>
+
+    <!-- CARDS -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1558655146-364adaf1fcc9"
+             class="h-40 w-full object-cover rounded-t-xl">
+
+        <div class="p-4">
+          <h3 class="font-semibold mb-1">Logo Design & Brand Guideline</h3>
+          <p class="text-sm text-gray-500 mb-2">From $100</p>
+
+          <p class="text-xs text-gray-500 mb-3">
+            Within 1–2 weeks • 3 concepts • 10 revisions
+          </p>
+
+          <div class="flex items-center gap-2 text-sm">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                 class="w-8 h-8 rounded-full">
+            <span class="font-medium">Opelia Studio</span>
+            <span class="text-blue-600 text-xs bg-blue-100 px-2 rounded">PRO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf"
+             class="h-40 w-full object-cover rounded-t-xl">
+
+        <div class="p-4">
+          <h3 class="font-semibold mb-1">Social Media Design</h3>
+          <p class="text-sm text-gray-500 mb-2">From $80</p>
+
+          <p class="text-xs text-gray-500 mb-3">
+            Less than a week • 9 posts • 10 revisions
+          </p>
+
+          <div class="flex items-center gap-2 text-sm">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                 class="w-8 h-8 rounded-full">
+            <span class="font-medium">Rhythm Studio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0"
+             class="h-40 w-full object-cover rounded-t-xl">
+
+        <div class="p-4">
+          <h3 class="font-semibold mb-1">Brand Identity Design</h3>
+          <p class="text-sm text-gray-500 mb-2">From $1,299</p>
+
+          <p class="text-xs text-gray-500 mb-3">
+            Within 1 month • 3 concepts
+          </p>
+
+          <div class="flex items-center gap-2 text-sm">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg"
+                 class="w-8 h-8 rounded-full">
+            <span class="font-medium">Yahia SM</span>
+            <span class="text-blue-600 text-xs bg-blue-100 px-2 rounded">PRO</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

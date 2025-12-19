@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Behance Explore Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- NAVBAR -->
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+    <div class="flex items-center gap-6">
+      <h1 class="text-2xl font-bold">Behance</h1>
+      <nav class="hidden md:flex gap-4 text-sm font-medium">
+        <a href="i.html" class="hover:text-blue-600">Dashboard</a>
+        <a href="logo.html" class="hover:text-blue-600">Freelancers</a>
+        <a href="service.html" class="hover:text-blue-600">Services</a>
+        <a href="explore.html" class="hover:text-blue-600">Explore</a>
+      </nav>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <button class="border rounded-full px-4 py-1 text-sm">
+        New Freelance Job
+      </button>
+      <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH -->
+<section class="bg-white border-b">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center gap-3">
+    <input
+      type="text"
+      placeholder="Search Behance..."
+      class="flex-1 border rounded-full px-4 py-2 text-sm outline-none"
+    />
+    <button class="text-sm font-medium">Filter</button>
+  </div>
+</section>
+
+<!-- CATEGORY -->
+<section class="max-w-7xl mx-auto px-4 py-4 overflow-x-auto">
+  <div class="flex gap-3 min-w-max">
+    <button class="px-4 py-2 rounded-full bg-blue-600 text-white text-sm">For You</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">Following</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">Best of Behance</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">Graphic Design</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">Photography</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">Illustration</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">UI/UX</button>
+    <button class="px-4 py-2 rounded-full bg-black text-white text-sm">Motion</button>
+  </div>
+</section>
+
+<!-- GRID CONTENT -->
+<section class="max-w-7xl mx-auto px-4 pb-10">
+  <h2 class="text-lg font-semibold mb-4">Recommended For You</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    
+    <!-- CARD -->
+    <div class="bg-white rounded-lg overflow-hidden shadow">
+      <img src="https://blog-static.mamikos.com/wp-content/uploads/2020/05/Macam-Macam-Gambar-Ilustrasi-dan-Contohnya.jpg" class="w-full h-48 object-cover">
+      <div class="p-3">
+        <p class="text-sm font-medium">Illustration Project</p>
+        <p class="text-xs text-gray-500">by Designer</p>
+        <div class="flex justify-between text-xs text-gray-500 mt-2">
+          <span>❤️ 156</span>
+          <span>👁️ 525</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg overflow-hidden shadow">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.y7JFRoPyyUXlIxlZLF_hPQHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-full h-48 object-cover">
+      <div class="p-3">
+        <p class="text-sm font-medium">Coffee Branding</p>
+        <p class="text-xs text-gray-500">by Studio</p>
+        <div class="flex justify-between text-xs text-gray-500 mt-2">
+          <span>❤️ 121</span>
+          <span>👁️ 585</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg overflow-hidden shadow">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.mrVnj_FGM_oqFWXGDMTfbAHaEJ?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-full h-48 object-cover">
+      <div class="p-3">
+        <p class="text-sm font-medium">Music App UI</p>
+        <p class="text-xs text-gray-500">by Vera</p>
+        <div class="flex justify-between text-xs text-gray-500 mt-2">
+          <span>❤️ 262</span>
+          <span>👁️ 980</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg overflow-hidden shadow">
+      <img src="https://th.bing.com/th/id/OIP.ZGdP4MOnBKgNXLh7vwzKeAHaEo?o=7&cb=ucfimg2&rm=3&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" class="w-full h-48 object-cover">
+      <div class="p-3">
+        <p class="text-sm font-medium">Fantasy Illustration</p>
+        <p class="text-xs text-gray-500">by Artist</p>
+        <div class="flex justify-between text-xs text-gray-500 mt-2">
+          <span>❤️ 180</span>
+          <span>👁️ 528</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
